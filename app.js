@@ -60,6 +60,7 @@ const user = require('./routes/user');
 const paypal = require('./routes/payments/paypal');
 const stripe = require('./routes/payments/stripe');
 const authorizenet = require('./routes/payments/authorizenet');
+const sendToEmail = require('./routes/payments/send_to_email');
 
 const app = express();
 
@@ -274,6 +275,7 @@ app.use('/', admin);
 app.use('/paypal', paypal);
 app.use('/stripe', stripe);
 app.use('/authorizenet', authorizenet);
+app.use('/send_to_email', sendToEmail);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

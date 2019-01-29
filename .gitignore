@@ -2,4 +2,6 @@ node_modules/
 data/
 /config/settings-local.json
 .vscode
+.idea
 **.DS_Store
+public/uploads/
